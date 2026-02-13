@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main()
+{
+    double valorHora, horasTrabalhadas, salarioTotal;
+
+    printf("--- Calculo de Salario Mensal ---\n");
+
+    printf("Quanto voce ganha por hora trabalhada? R$ ");
+    scanf("%lf", &valorHora);
+
+    printf("Quantas horas voce trabalhou este mes? ");
+    scanf("%lf", &horasTrabalhadas);
+
+    // O calculo e a multiplicacao simples entre as duas variaveis
+    salarioTotal = valorHora * horasTrabalhadas;
+
+    printf("\n----------------------------------\n");
+    printf("Horas trabalhadas: %.1lf h\n", horasTrabalhadas);
+    printf("Valor da hora:     R$ %.2lf\n", valorHora);
+    printf("SALARIO TOTAL:     R$ %.2lf\n", salarioTotal);
+    printf("----------------------------------\n");
+
+    return 0;
+}
