@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h> // Para usar a função pow()
+
+int main()
+{
+    double raio, area;
+    const double PI = 3.14159265;
+
+    printf("--- Calculadora de Area da Circunferencia ---\n");
+
+    printf("Digite o valor do raio: ");
+    scanf("%lf", &raio);
+
+    // Calculo: PI vezes o raio ao quadrado
+    area = PI * pow(raio, 2);
+
+    printf("\n--------------------------------------\n");
+    printf("Com o raio de %.2lf, a area e: %.4lf\n", raio, area);
+    printf("--------------------------------------\n");
+
+    return 0;
+}
