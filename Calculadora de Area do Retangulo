@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    double base, altura, area;
+
+    printf("--- Calculadora de Area do Retangulo ---\n");
+
+    printf("Digite o valor da base: ");
+    scanf("%lf", &base);
+
+    printf("Digite o valor da altura: ");
+    scanf("%lf", &altura);
+
+    // Cálculo da área
+    area = base * altura;
+
+    printf("\n--------------------------------------\n");
+    printf("A area do retangulo e: %.2lf\n", area);
+    printf("--------------------------------------\n");
+
+    return 0;
+}
