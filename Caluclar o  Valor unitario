@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+    double valorTotal, quantidade, unitario;
+
+    printf("--- Caluclar o  Valor unitario ---\n");
+
+    printf("Digite a quantidade de produtos: ");
+    scanf("%lf", &quantidade);
+
+    printf("Digite o valor unitario: (%%): ");
+    scanf("%lf", &unitario);
+
+    // 1. Calcula quanto reais serão abatidos
+    valorTotal = quantidade * unitario ;
+
+    
+
+    printf("\n--- Resumo da Compra ---\n");
+    printf("Quantidade de produtos: %.2lf\n", quantidade);
+    printf("Valor Unitario : %.2lf\n", unitario);
+    printf("Valor Total  %.2lf\n", valorTotal);
+    printf("------------------------\n");
+
+    return 0;
+}
