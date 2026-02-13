@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    double numero, indice, resultado;
+
+    printf("--- Calculadora de Raiz Generica ---\n");
+
+    printf("Digite o numero (radicando): ");
+    scanf("%lf", &numero);
+
+    printf("Digite o indice da raiz (ex: 2 para quadrada, 3 para cubica, 10 para decima): ");
+    scanf("%lf", &indice);
+
+    // Aplicando a propriedade: raiz indice 'n' de 'x' = x elevado a (1/n)
+    resultado = pow(numero, 1.0 / indice);
+
+    printf("\n--------------------------------------\n");
+    printf("A raiz de indice %.0lf do numero %.2lf e: %.4lf\n", indice, numero, resultado);
+    printf("--------------------------------------\n");
+
+    return 0;
+}
