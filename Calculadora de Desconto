@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    double precoOriginal, porcentagem, valorDesconto, precoFinal;
+
+    printf("--- Calculadora de Desconto ---\n");
+
+    printf("Digite o valor do produto: R$ ");
+    scanf("%lf", &precoOriginal);
+
+    printf("Digite a porcentagem de desconto (%%): ");
+    scanf("%lf", &porcentagem);
+
+    // 1. Calcula quanto reais serão abatidos
+    valorDesconto = precoOriginal * (porcentagem / 100.0);
+
+    // 2. Subtrai o desconto do preço original
+    precoFinal = precoOriginal - valorDesconto;
+
+    printf("\n--- Resumo da Compra ---\n");
+    printf("Preco original: R$ %.2lf\n", precoOriginal);
+    printf("Desconto (-):   R$ %.2lf\n", valorDesconto);
+    printf("VALOR A PAGAR:  R$ %.2lf\n", precoFinal);
+    printf("------------------------\n");
+
+    return 0;
+}
