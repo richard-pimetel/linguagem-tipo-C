@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    double comprimento, largura, altura, volume;
+
+    printf("--- Calculadora de Volume da Caixa ---\n");
+
+    printf("Digite o comprimento: ");
+    scanf("%lf", &comprimento);
+
+    printf("Digite a largura: ");
+    scanf("%lf", &largura);
+
+    printf("Digite a altura: ");
+    scanf("%lf", &altura);
+
+    // O volume é o produto das três dimensões
+    volume = comprimento * largura * altura;
+
+    printf("\n--------------------------------------\n");
+    printf("O volume da caixa e: %.2lf unidades cubicas\n", volume);
+    printf("--------------------------------------\n");
+
+    return 0;
+}
